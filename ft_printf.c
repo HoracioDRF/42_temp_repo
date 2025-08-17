@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: student <student@student.42.fr>          +#+  +:+       +#+        */
+/*   By: horrodri <horrodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 17:30:00 by student           #+#    #+#             */
-/*   Updated: 2024/12/19 17:30:00 by student          ###   ########.fr       */
+/*   Updated: 2025/08/17 19:00:42 by horrodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static int	ft_process_format_char(const char *format, int *i, va_list *args)
 	{
 		if (format[*i + 1])
 		{
-		(*i)++;
+			(*i)++;
 			return (ft_parse_conversion(format[*i], args));
 		}
 		return (0);
